@@ -1,2 +1,2 @@
-# WalmartProductScrapper
-A JS Project which will scrap product details from Walmart URL inserted and update the dashboard accordingly.
+# ProductScrapperDashboard
+A JS Project will scrap product details from the E-commerce URL inserted and update the dashboard accordingly.
