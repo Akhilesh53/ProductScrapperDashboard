@@ -1,0 +1,27 @@
+{
+  "name": "productscrapperdashboard",
+  "version": "1.0.0",
+  "description": "A JS Project will scrap product details from the E-commerce URL inserted and update the dashboard accordingly.",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akhilesh Mahajan",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^3.2.6",
+    "cheerio": "^1.0.0",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "mongoose": "^8.6.1",
+    "nodemailer": "^6.9.15",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^8.0.0",
+    "puppeteer": "^23.3.0"
+  }
+}
