@@ -18,6 +18,10 @@ function isAuthenticated(req, res, next) {
 }
 
 
+/*
+* ============== LOGIN
+*/
+
 //get login
 userRoutes.get('/login', (req, res) => {
     res.render('./users/login');
@@ -31,6 +35,10 @@ userRoutes.post('/login', passport.authenticate('local', {
     failureMessage: "Invalid email or password"
 }))
 
+
+/**
+* =============== SIGNUP
+*/
 // get signup
 userRoutes.get('/signup', (req, res) => {
     res.render('./users/signup');
@@ -56,6 +64,10 @@ userRoutes.post('/signup', (req, res) => {
     })
 })
 
+
+/* 
+*============== FORGOT PASSWORD
+*/
 // forget password
 userRoutes.get('/forgot', (req, res) => {
     res.render('./users/forgot');
@@ -140,6 +152,10 @@ userRoutes.post('/forgot', (req, res, next) => {
     });
 });
 
+
+/**
+ * =============== CHANGE PASSWORD
+ */
 // change password
 userRoutes.get('/password/change', isAuthenticated, (req, res) => {
     res.render('./users/changepassword');
@@ -171,6 +187,9 @@ userRoutes.post('/password/change', (req, res) => {
     })
 })
 
+/**
+ * =============== RESET PASSWORD
+ */
 // reset password
 userRoutes.get('/reset/:token', (req, res) => {
     res.render('./users/changepassword');
